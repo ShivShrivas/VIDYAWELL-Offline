@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main_activity__admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextColor="#fff"
+        app:itemIconTint="#fff"
+        android:fitsSystemWindows="true"
+        android:theme="@style/NavigationView"
+        app:headerLayout="@layout/nav_header_main_activity__admin"
+        android:background="@drawable/gradiant_menu"
+        app:menu="@menu/activity_main_admin_drawer">
+
+
+    <Button
+        android:id="@+id/btn_app_version"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:gravity="end|center"
+        android:textSize="11dp"
+        android:paddingRight="5dp"
+        android:text="Version : 1.0.16"
+        android:background="#208ABE"
+        android:textColor="#fff"
+        android:layout_gravity="bottom"/>
+
+</android.support.design.widget.NavigationView>
+
+
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+

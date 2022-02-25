@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_margin="0dp"
+            android:id="@+id/text_snumber"
+            android:textColor="#000"
+            android:gravity="start|center"
+            android:layout_weight="1"
+            android:text="S No."
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+            android:id="@+id/textview_studentname"
+            android:gravity="start|center"
+            android:inputType="numberDecimal"
+            android:layout_margin="2dp"
+            android:textColor="#000"
+            android:layout_weight=".8"
+            android:maxLength="20"
+            android:text="Amit kumar"
+            android:textSize="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <EditText
+            android:imeOptions="actionDone"
+            android:id="@+id/marks_theory"
+            android:nextFocusDown="@id/marks_practical"
+            android:maxLength="6"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_margin="2dp"
+            android:background="@drawable/dashbackground"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:imeOptions="actionDone"
+            android:nextFocusRight="@id/marks_notebook"
+            android:id="@+id/marks_practical"
+            android:maxLength="6"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_margin="2dp"
+            android:background="@drawable/dashbackground"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:imeOptions="actionDone"
+            android:nextFocusRight="@id/marks_enrichment"
+            android:id="@+id/marks_notebook"
+            android:maxLength="6"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_margin="2dp"
+            android:background="@drawable/dashbackground"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:imeOptions="actionDone"
+            android:id="@+id/marks_enrichment"
+            android:maxLength="6"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_margin="2dp"
+            android:background="@drawable/dashbackground"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_margin="2dp"
+            android:background="@drawable/dashbackground"
+            android:layout_weight=".9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:entries="@array/array_grade"
+                android:text="Grade"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </Spinner>
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:background="#009688"
+            android:id="@+id/button_lock"
+            android:text="UnLock"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

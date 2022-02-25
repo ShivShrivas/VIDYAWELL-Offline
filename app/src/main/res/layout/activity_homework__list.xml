@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_homework_list"
+    tools:context=".Homework_List">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:id="@+id/layout_cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:background="@color/colorAccent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:text="Date"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:id="@+id/date_text"
+                    android:textStyle="bold"
+                    android:text="20-11-2018"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/ic_small_calendar"
+                android:orientation="vertical">
+
+                <!-- <android.support.v7.widget.CardView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     app:cardCornerRadius="0dp"
+                     android:layout_margin="5dp"
+                     app:cardElevation="0dp">-->
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/layout_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Text_Datev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#e44821"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:text="13"/>
+                    <TextView
+                        android:id="@+id/text_monthnamev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#027fd9"
+                        android:textSize="10dp"
+                        android:gravity="center"
+                        android:text="Nov"/>
+                </LinearLayout>
+
+                <!--  </android.support.v7.widget.CardView>-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:layout_marginLeft="2dp"
+                android:text="Homework Posted List"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:background="@color/colorfooter"
+                android:layout_marginTop="2dp"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="#fff"
+                    android:text="Class"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="#fff"
+                    android:text="Section"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="#fff"
+                    android:text="Subject"/>
+
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="#fff"
+                    android:text="Home Work"/>
+
+                <TextView
+                    android:layout_weight="1.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="#fff"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp">
+                <ListView
+                    android:id="@+id/list_womework"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+<!--
+        <ListView
+            android:id="@+id/list_womework"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+-->
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add new"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorPrimary">
+
+        </TextView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:contentDescription="Add new"
+            app:srcCompat="@drawable/ic_plus" >
+
+
+
+        </android.support.design.widget.FloatingActionButton>>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorfooter"
+        android:gravity="center">
+
+
+    </RelativeLayout>
+</RelativeLayout>

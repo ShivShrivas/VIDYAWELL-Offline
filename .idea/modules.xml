@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/VidyawellAdmin.iml" filepath="$PROJECT_DIR$/VidyawellAdmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VidyawellAdmin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VidyawellAdmin.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/boommenu/VidyawellAdmin.boommenu.iml" filepath="$PROJECT_DIR$/.idea/modules/boommenu/VidyawellAdmin.boommenu.iml" />
+    </modules>
+  </component>
+</project>

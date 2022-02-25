@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="0dp"
+                    android:layout_marginLeft="10dp" >
+                    <TextView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Hello"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:id="@+id/text_chatmsg_new">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_conversion_id"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="0dp"
+                    android:layout_marginLeft="10dp" >
+
+                    <TextView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="Mca"
+                        android:textSize="12dp"
+                        android:id="@+id/contact_number">
+
+                    </TextView>
+
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal"
+                    android:padding="0dp"
+                    android:layout_marginLeft="10dp" >
+                    <TextView
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:layout_marginBottom="3dp"
+                        android:text="10-085-2019"
+                        android:textSize="9dp"
+                        android:id="@+id/text_chatdate_new">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="10dp" >
+
+
+
+                <Button
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ic_proceed_arrow">
+
+                </Button>
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

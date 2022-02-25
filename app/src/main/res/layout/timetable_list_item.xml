@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/layout_homework"
+    android:padding="0dp"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/box">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:id="@+id/subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:text="Math"/>
+                    <TextView
+                        android:textSize="25dp"
+                        android:singleLine="true"
+                        android:textColor="#0673b3"
+                        android:id="@+id/lunch_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="12dp"
+                          android:text="Lunch Break "/>
+                    <TextView
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:textColor="#5b5b5b"
+                        android:id="@+id/teacher_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Miss Depa"/>
+                    <TextView
+                        android:textSize="12dp"
+                        android:singleLine="true"
+                        android:textColor="#5b5b5b"
+                        android:id="@+id/lecture_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9:20-11:20"/>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/timetable_image"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/one" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">Vidyawell Admin</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="time_out">TIME OUT</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_image_trans">logo</string>
+    <string name="image_trans">gallery</string>
+
+
+    <string name="text_inside_circle_button_text_normal">Text Inside Circle Button(Normal)</string>
+    <string name="text_inside_circle_button_text_highlighted">Text Inside Circle Button(Highlighted)</string>
+    <string name="text_inside_circle_button_text_unable">Text Inside Circle Button(Unable)</string>
+
+    <string name="text_outside_circle_button_text_normal">Text Outside Circle Button(Normal)</string>
+    <string name="text_outside_circle_button_text_highlighted">Text Outside Circle Button(Highlighted)</string>
+    <string name="text_outside_circle_button_text_unable">Text Outside Circle Button(Unable)</string>
+
+    <string name="text_ham_button_text_normal">Ham Button Text(Normal)</string>
+    <string name="text_ham_button_text_highlighted">Ham Button Text(Highlighted)</string>
+    <string name="text_ham_button_text_unable">Ham Button Text(Unable)</string>
+    <string name="text_ham_button_sub_text_normal">Ham Button Sub Text(Normal)</string>
+    <string name="text_ham_button_sub_text_highlighted">Ham Button Sub Text(Highlighted)</string>
+    <string name="text_ham_button_sub_text_unable">Ham Button Sub Text(Unable)</string>
+    <string name="dialog_ok_button">OK</string>
+
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="add_geofences">Add geofences</string>
+    <string name="remove_geofences">Remove geofences</string>
+
+    <string name="geofences_added">Geofences added</string>
+    <string name="geofences_removed">Geofences removed</string>
+
+    <!-- Error strings -->
+    <string name="not_connected">GoogleApiClient no yet connected. Try again.</string>
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="unknown_geofence_error">
+        Unknown error: the Geofence service is not available now
+    </string>
+    <string name="geofence_transition_invalid_type">
+        Geofence transition error: invalid transition type %1$d
+    </string>
+
+    <!-- Transition type strings -->
+    <string name="geofence_transition_entered">Entered</string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+
+    <string name="geofence_transition_notification_text">Click notification to return to app</string>
+
+
+    <string-array name="array_months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="array_idprove">
+        <item>pan card</item>
+        <item>voter id</item>
+        <item>aadhar card</item>
+        <item>driver licence</item>
+        <item>marksheet</item>
+        <item>address proof</item>
+    </string-array>
+
+
+    <string-array name="array_employee">
+        <item>Teacher</item>
+        <item>Staff</item>
+
+    </string-array>
+    <string-array name="array_submision_requred">
+        <item>Yes</item>
+        <item>No</item>
+
+    </string-array>
+    <string-array name="array_days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="array_month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string-array name="array_leave_for">
+        <item>Full</item>
+        <item>First Half</item>
+        <item>Second Half</item>
+
+
+    </string-array>
+
+    <string-array name="array_communication_mode">
+        <item>Mobile</item>
+        <item>Email</item>
+
+    </string-array>
+
+
+    <string-array name="array_Stream">
+        <item>Hindi Medium</item>
+        <item>English Medium</item>
+    </string-array>
+    <string-array name="array_grade">
+        <item>A+</item>
+        <item>A</item>
+        <item>O</item>
+        <item>B</item>
+        <item>B+</item>
+        <item>C</item>
+        <item>C+</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>S</item>
+        <item>U</item>
+    </string-array>
+
+</resources>

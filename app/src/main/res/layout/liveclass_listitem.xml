@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_notice"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="7dp"
+        android:background="#ffffff">
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/live_date"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/liveclassdate"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:text="Today" />
+
+                    <TextView
+                        android:id="@+id/meeting_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/RunningMeetingUrl_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/main_url_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#B5B5B5"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/liveclassdate" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/liveclass_topic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="abcd">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/liveclass_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#353434"
+                            android:text="abcddfghgfgfhfg"/>
+
+                        <TextView
+                            android:id="@+id/liveclass_massage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#353434"
+                            android:text="okkkk"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout_joint_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/notice_attechment"
+                            android:visibility="gone"/>
+
+                        <vidyawell.infotech.bsn.admin.Gifimage.GifDecoderView
+                            android:id="@+id/gif_id"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textColor="#fff"
+                            android:id="@+id/txt_join_more"
+                            android:textSize="14dp"
+                            android:text="Start Now">
+
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/live_date"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/liveclassdate"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:text="Today" />
+                    <Switch
+                        android:id="@+id/switch_activeclinic"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#009688"
+                        android:text="Active      "/>
+                    <TextView
+                        android:id="@+id/meeting_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/RunningMeetingUrl_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/main_url_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#B5B5B5"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/liveclassdate" />
+
+
+                <TextView
+                    android:layout_weight="1.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:paddingStart="13dp"
+                    android:text="Dear Teacher,">
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/txt_name"
+                        android:layout_weight="1.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingStart="10dp"
+                        android:text="Mr. PradeepYadav">
+
+                    </TextView>
+                    <TextView
+
+                        android:layout_weight="1.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingStart="10dp"
+                        android:text=" you have invited for scheduled ">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:id="@+id/txt_meeting_name"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="English">
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="0"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_weight="1.4"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Topic:">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Class:"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Date:"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Time:"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="9dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Duration"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:singleLine="true"
+                            android:id="@+id/liveclass_topic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#353434"
+                            android:text="abcd">
+
+                        </TextView>
+
+                        <TextView
+                            android:singleLine="true"
+                            android:id="@+id/liveclass_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#353434"
+                            android:text="3rd"/>
+
+                        <TextView
+                            android:singleLine="true"
+                            android:id="@+id/liveclass_massage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#353434"
+                            android:text="okkkk"/>
+
+                        <TextView
+                            android:id="@+id/txt_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#353434"
+                            android:text="10:Am"/>
+
+                        <TextView
+                            android:id="@+id/txt_duration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/text_size"
+                            android:textColor="#353434"
+                            android:text="40 min"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/layout_joint_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/notice_attechment"
+                            android:visibility="gone"/>
+
+                        <vidyawell.infotech.bsn.admin.Gifimage.GifDecoderView
+                            android:id="@+id/gif_id"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:id="@+id/txt_join_more"
+                            android:textSize="10dp"
+                            android:text="Start Now">
+
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

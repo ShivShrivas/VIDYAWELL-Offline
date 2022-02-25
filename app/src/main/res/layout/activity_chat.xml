@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_chat"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    android:background="#fff"
+    tools:context=".Chat_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+<ListView
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:layout_weight="1"
+    android:scrollbars="none"
+    android:id="@+id/list_chat"
+    android:layout_width="match_parent"
+    android:dividerHeight="10dp"
+    android:divider="#fff"
+    android:layout_height="match_parent">
+
+</ListView>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+                    android:id="@+id/edit_chat"
+                    android:background="#d7d7d7"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="13dp"
+                    android:gravity="top|left"
+                    android:hint="Your message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/button_qsend"
+                    android:background="@color/colorAccent"
+                    android:layout_weight="2"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:text="SEND"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vidyawell.infotech.bsn.admin">
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.webkit.PermissionRequest" />
+    <uses-permission android:name="android.webkit.PermissionRequest" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name=".ApplicationControllerAdmin"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/admin_icon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/CustomActionBarTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Student_List"></activity>
+        <activity
+            android:name=".Virtual_Class"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".LiveClass" />
+        <activity
+            android:name=".LiveClass_Video"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Homework_Varify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Homework_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".E_Class_Video_Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".E_Book"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Video_Web"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".E_Class_Live_Video"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Approved_Vedio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Checked_Unchecked"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Homwork_Checked_Status_Button"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Homework_notificatin_submit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Homework_Topic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DownloadImageHomework"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Salary_Slip" />
+        <activity
+            android:name=".Admin_Leave_Approve"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin_Leave_Approve_Student"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Leave_Applicatios"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Student_Leave_Applicatios" />
+        <activity android:name=".MobileAttendance.EmployeeAttendance" />
+        <activity
+            android:name=".Marks_Entry"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".EmployeeList" />
+        <activity
+            android:name=".Result_Submit_Classwise"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ForgotPassword" />
+        <activity
+            android:name=".Upload_Document"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashOne_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity_Admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SplashTwo_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Login_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Staff_Attendance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Staff_Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Student_Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Class_Attendance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Emp_Attendance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".Student_Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin_School_Calendar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HolidayList_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Circular"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notice_Board"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Employee_AttStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Time_table"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notification"
+            android:parentActivityName=".SplashOne_Activity" />
+        <activity android:name=".Visiter_Activity" />
+        <activity android:name=".Visitors_Details_Activity" />
+        <activity
+            android:name=".Complaint_View"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Emp_Leave_Status" />
+        <activity
+            android:name=".Complaint_Box"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- Firebase Notifications -->
+        <activity
+            android:name=".Complaint_Composer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Dialy_Diary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Bus_on_Route"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Emp_Leave_Apply"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Busroute_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Emp_Leave_History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Complaint_History"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vehicle_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Bus_Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student_Query"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Zoom_Image_Gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SingleZoom_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vedios_gallery_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chat_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Conversation_Thread"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Full_Screen"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Full_Screen_Live"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Change_Password"
+            android:screenOrientation="portrait" />
+        <receiver android:name = "MyReceiver">
+            <intent-filter>
+                <action android:name = "android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name = "android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MobileAttendance.GeofenceTransitionsIntentService" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+
+        </provider>
+
+    </application>
+
+</manifest>

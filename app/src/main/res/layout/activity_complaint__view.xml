@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/font_complaint_view"
+    android:background="@color/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_weight=".1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_comp_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="Select Class"/>
+
+                <TextView
+                    android:id="@+id/text_comp_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="Select Section"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:textSize="11dp"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="3dp"
+                    android:text="Select Section"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="3dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="2dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/select_classc">
+                    </Spinner>
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="3dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="2dp">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/select_sectionc">
+                    </Spinner>
+
+
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="3dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1.3"
+                    app:cardCornerRadius="2dp">
+                    <Button
+                        android:id="@+id/button_searchlistc"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="11dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="#fff"
+                        android:text="Search"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/student_search"
+                    android:padding="7dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:hint="Search Name"
+                    android:textSize="15dp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                    android:drawableRight="@drawable/ic_search">
+                </EditText>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/layout_select_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <CheckBox
+                    android:id="@+id/check_select_All"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/check_select_All"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12dp"
+                    android:text="Selelct All"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:text="Student List"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/layout_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/complaint_view_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:clickable="true"
+                    android:divider="@color/backgroundcolor"
+                    android:dividerHeight="3dp"
+                    android:scrollbars="none"
+                    android:scrollingCache="false"
+                    android:smoothScrollbar="true">
+
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="7"
+                android:id="@+id/chat_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_outline"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_weight="3"
+                    android:id="@+id/Edit_complaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:layout_margin="0dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="5dp"
+                    android:gravity="left|top"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+                    android:textSize="15dp"
+                    android:hint="Write here"/>
+
+                <Button
+                    android:layout_weight=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="send"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:background="@color/colorAccent"
+                    android:id="@+id/complaint_send"
+                    android:layout_alignRight="@+id/Edit_complaint"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true">
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

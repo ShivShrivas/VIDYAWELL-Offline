@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_complaints"
+    android:background="@color/backgroundcolor"
+    tools:context=".Complaint_Box">
+
+    <LinearLayout
+        android:id="@+id/layout_lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bcbcbc"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_classsection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="Class (Section) "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:layout_marginRight="20dp"
+            android:text="Feedback"/>
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_below="@+id/layout_lname"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/list_comp"
+        android:layout_width="match_parent"
+        android:dividerHeight="10dp"
+        android:divider="@color/backgroundcolor"
+        android:layout_height="match_parent">
+    </ListView>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/background_half"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/comp_hist"
+            android:src="@drawable/ic_icon_history" />
+
+    </RelativeLayout>
+</RelativeLayout>

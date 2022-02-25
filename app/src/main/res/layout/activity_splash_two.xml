@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="center"
+    tools:context="vidyawell.infotech.bsn.admin.SplashTwo_Activity">
+
+
+    <ImageView
+        android:id="@+id/image_app_logo"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:transitionName="@string/activity_image_trans"
+        android:src="@drawable/vidyawell_logo"/>
+</LinearLayout>

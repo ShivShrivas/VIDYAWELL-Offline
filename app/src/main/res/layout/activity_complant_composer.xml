@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_slist"
+    android:background="@color/backgroundcolor"
+    tools:context=".Complaint_Composer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/student_search_comp"
+            android:padding="7dp"
+            android:background="#ffffff"
+            android:drawablePadding="10dp"
+            android:hint="Search Name"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:drawableRight="@drawable/ic_search">
+        </EditText>
+
+    </LinearLayout>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:scrollbars="none"
+    android:divider="@color/backgroundcolor"
+    android:id="@+id/list_comp"></ListView>
+
+</LinearLayout>

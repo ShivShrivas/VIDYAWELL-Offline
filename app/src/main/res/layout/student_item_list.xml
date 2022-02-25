@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/student_layout">
+
+    <android.support.v7.widget.CardView
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="5dp"
+        app:cardElevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <View
+            android:layout_marginLeft="0dp"
+            android:layout_width="10dp"
+            android:layout_height="98dp"
+            android:background="@color/colorfooter"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0"
+
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/text_stucode"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/student_image"
+
+                app:siRadius="6dp"
+                app:siBorderWidth="2dp"
+                app:siBorderColor="#fff"
+                app:siSquare="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subject_title"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:text="Maths"/>-->
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:layout_marginLeft="10dp" >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/topic1"
+                android:layout_weight=".5"
+                android:textSize="12dp"
+                android:textColor="#292929"
+                android:text="Name : "
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+            </TextView>
+
+            <TextView
+                android:id="@+id/topic4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:textSize="12dp"
+                android:textColor="#292929"
+                android:text="Father:"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/topic2"
+                android:layout_weight=".4"
+                android:textSize="12dp"
+                android:textColor="#292929"
+                android:text="Mobile     :"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+            </TextView>
+            <TextView
+                android:id="@+id/topic_class3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:textSize="12dp"
+                android:textColor="#292929"
+                android:text="Class :"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+            </TextView>
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="Abhishek"
+                    android:id="@+id/student_names"
+                    android:focusable="false"
+                    android:textSize="12dp"
+                    android:focusableInTouchMode="false">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="Rajesh Gupta"
+                    android:textSize="12dp"
+                    android:id="@+id/fother_name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="8886548521"
+                    android:id="@+id/mobile_stu"
+                    android:textSize="12dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="7A"
+                    android:textSize="12dp"
+                    android:id="@+id/class_name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/url_stu"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/student_status"
+                android:background="@drawable/ic_present"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+            </Button>
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/arrow"
+                android:background="@drawable/ic_proceed_arrow"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+            </Button>
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+

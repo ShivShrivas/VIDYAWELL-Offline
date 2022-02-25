@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_upload_document"
+    tools:context=".Upload_Document">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:id="@+id/admin_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:id="@+id/department"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:padding="5dp"
+                     android:paddingStart="5dp"
+                     android:text="Department"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="14dp" />
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="45dp"
+                     android:orientation="vertical">
+
+                     <android.support.v7.widget.CardView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_margin="3dp"
+                         android:layout_weight="1"
+                         app:cardCornerRadius="2dp"
+                         app:cardElevation="3dp">
+
+                         <Spinner
+                             android:id="@+id/dipartment_type"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:focusable="true">
+
+                         </Spinner>
+                     </android.support.v7.widget.CardView>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:padding="5dp"
+                     android:id="@+id/name_hide_layout"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                 <TextView
+                     android:textColor="#000"
+                     android:id="@+id/text_emp_name"
+                     android:singleLine="true"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:paddingStart="5dp"
+                     android:textSize="12dp" />
+
+
+
+                 <TextView
+                     android:id="@+id/text_designation"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:singleLine="true"
+                     android:paddingStart="5dp"
+                     android:textSize="12dp" />
+
+
+                 <TextView
+                     android:id="@+id/text_father_name"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:paddingStart="5dp"
+                     android:singleLine="true"
+                     android:textSize="12dp" />
+
+                 </LinearLayout>
+             </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/employee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:text="Employee List"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/button_emp_find"
+                        android:layout_gravity="center"
+                        android:layout_width="150dp"
+                        android:text="Select Employee >"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        android:background="@drawable/login_button_style"
+                        android:layout_height="35dp" />
+
+
+                  <!--  <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/img_employee" />
+-->
+
+
+                    <com.github.siyamed.shapeimageview.RoundedImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:id="@+id/img_employee"
+                        app:siRadius="6dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        app:siBorderWidth="2dp"
+                        app:siBorderColor="#000"
+                        app:siSquare="true"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+          </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/document_upload_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_document_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="Document Type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <Spinner
+                    android:id="@+id/document_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true">
+
+                </Spinner>
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:background="@drawable/gradiant_green"
+                android:padding="5dp"
+                android:text="Upload"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+     <!--   <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="3dp"
+            android:background="#39a67c"
+            android:padding="5dp"
+            android:text="Upload"
+            android:textColor="#FFFFFF" />
+-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#7E7171" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/document_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorfooter"
+        android:gravity="center">
+
+    </RelativeLayout>
+
+</RelativeLayout>

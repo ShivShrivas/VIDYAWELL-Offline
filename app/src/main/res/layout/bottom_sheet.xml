@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/bottom_sheet"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:textColor="#000"
+        android:id="@+id/take_pic"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:id="@+id/take_library"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose from Library"/>
+
+
+    <TextView
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:id="@+id/upload_pdf"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload PDF"/>
+    <TextView
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:id="@+id/txt_audio"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio"/>
+
+
+
+    <TextView
+        android:textSize="16dp"
+        android:textColor="#A50303"
+        android:id="@+id/close"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close"/>
+</LinearLayout>

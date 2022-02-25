@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/layout_applicationapprove_student"
+    tools:context=".Admin_Leave_Approve">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_view_status"
+            android:textColor="#000"
+            android:gravity="end"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:text="Requested By :-"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_view_username"
+            android:textColor="#000"
+            android:text="Amit Sharma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/from_leave_date"
+                android:layout_weight="1"
+                android:text="From Date"
+                android:textColor="#000"
+                android:textSize="14dp"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/to_leave_date"
+                android:layout_weight="1"
+                android:text="To Date"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:gravity="right"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:paddingRight="45dp"
+                android:gravity="center|start"
+                android:id="@+id/formdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="01-01-2019"
+                android:textSize="14dp"
+                android:textColor="#047c5e"
+                android:drawableRight="@drawable/ic_calendar_leave"
+                android:layout_marginStart="0dp"/>
+            <TextView
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_calendar_leave"
+                android:id="@+id/todate"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="05-01-2019"
+                android:textSize="14dp"
+                android:textColor="#047c5e"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_reason"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Reason"
+            android:textColor="#000"
+            android:textSize="14dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F2F2">
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abc"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_responsible"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Adjustment Lecture with"
+                android:textColor="#000"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:id="@+id/textview_respons_name"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Name:-XYZ"
+                android:textSize="14dp"
+                />
+            <TextView
+                android:id="@+id/textview_respons_subject"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Subject:- English"
+                android:textSize="14dp"
+                />
+            <TextView
+                android:id="@+id/textview_respons_class"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Class:- VI"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Remarks"
+                android:textColor="#000"
+                android:textSize="14dp"
+                />
+            <EditText
+                android:layout_marginTop="3dp"
+                android:id="@+id/edittext_remarks"
+                android:background="#F3F2F2"
+                android:hint="Enter remarks"
+                android:gravity="top"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:maxLength="100"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button_reject"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Reject"
+                    android:textColor="#fff"
+                    android:background="#D31002"
+                    android:layout_margin="5dp"
+                    android:layout_height="40dp"/>
+
+
+                <Button
+                    android:id="@+id/button_approved"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Approve"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:background="#009688"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

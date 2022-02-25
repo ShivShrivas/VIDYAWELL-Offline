@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/dialog_layout"
+    android:padding="5dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/close_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/delete_member"
+            android:layout_width="wrap_content"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="@drawable/ic_cancel" />
+
+
+        <TextView
+            android:id="@+id/text_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/click_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click Status Here"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:gravity="center">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/bottun_louck"
+                android:gravity="center"
+                android:text="Approved"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/round_button_green"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/closebutton"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="@drawable/ic_delete_button" />
+
+
+            <TextView
+                android:id="@+id/text_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:gravity="end"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp">
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"
+      />
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/progressBar1"/>
+    <WebView
+        android:id="@+id/file_type_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:orientation="vertical">
+
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_close"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="#fff"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button_green"
+            android:text="Close"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

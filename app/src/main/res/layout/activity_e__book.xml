@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_e_book"
+    tools:context=".E_Book">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_ncrt"
+        android:layout_marginRight="10dp"
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NCERT"
+        android:background="#E78262"
+        android:textColor="#fff">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_cbsc"
+        android:layout_marginLeft="10dp"
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CBSE"
+        android:background="#E96A95"
+        android:textColor="#fff">
+
+    </Button>
+</LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView_applogo"
+                android:layout_width="240dp"
+                android:layout_height="200dp"
+                android:background="@drawable/blue_book"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+
+        </RelativeLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorfooter"
+        android:gravity="center">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

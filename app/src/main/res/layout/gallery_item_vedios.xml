@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#ffffff"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="3dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.github.siyamed.shapeimageview.RoundedImageView
+                    android:id="@+id/staff_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:siBorderColor="#101010"
+                    app:siBorderWidth="1dp"
+                    app:siRadius="8dp"
+                    app:siSquare="true">
+
+                </com.github.siyamed.shapeimageview.RoundedImageView>
+
+
+                <RelativeLayout
+                    android:id="@+id/footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageView_vicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_playbutton"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_marginTop="5dp"
+                android:gravity="end"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="9dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_title"
+                android:gravity="start"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_description"
+                android:gravity="start"
+                android:maxLines="1"
+                android:justificationMode="inter_word"
+                android:textSize="9dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transection_id_v"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageurl_id"
+                android:visibility="gone"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

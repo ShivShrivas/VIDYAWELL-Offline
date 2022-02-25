@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/font_student_list"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_outline"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/student_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/student_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:text="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:paddingStart="5dp"
+            android:singleLine="true"
+            android:text="Student Name"
+            android:textColor="#0b0b0b"
+            android:textSize="12dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/stu_roolnumberc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:singleLine="true"
+            android:text="Roll No.: Not Assigned"
+            android:textColor="#4e4e4e"
+            android:textSize="9dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/father_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:text="Father Name"
+            android:layout_weight="1"
+            android:textColor="#4e4e4e"
+            android:textSize="9dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:id="@+id/checkbox_comp"
+          android:layout_gravity="right"
+         />
+
+        <CheckBox
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkbox_comp_new"
+            android:checked="true"
+            android:layout_gravity="right"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b3b3b3">
+
+
+    </View>
+
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/complaint_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:hint="ReasonDetails"/>
+
+    </LinearLayout>
+-->
+
+
+
+    <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_marginTop="25dp"
+                        android:layout_width="170dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/login_button_style"
+                        android:text="send"
+                        android:textColor="#fff"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+    -->
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

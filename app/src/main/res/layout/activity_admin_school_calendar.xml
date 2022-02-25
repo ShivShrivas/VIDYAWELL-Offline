@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_calendar"
+    tools:context="vidyawell.infotech.bsn.admin.Admin_School_Calendar">
+
+
+
+    <com.desai.vatsal.mydynamiccalendar.MyDynamicCalendar
+        android:id="@+id/myCalendar"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:bmb_piecePlaceEnum="piecePlace_ham_2"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_2"
+        app:bmb_pieceCornerRadius="2dp"
+        android:layout_margin="18dp"
+        app:bmb_buttonEnum="ham"
+        />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:padding="4dp"
+    android:background="#cfcfcf"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_weight="3"
+            android:src="@drawable/ic_holiday_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="#000"
+            android:gravity="center|start"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="11dp"
+            android:text="Holiday"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/ic_events_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:gravity="center|start"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:textSize="11dp"
+            android:text="Events"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/ic_todays_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:gravity="center|start"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:textSize="11dp"
+            android:text="Today's Date"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="9">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/button_addholidays"
+            android:background="@drawable/gradiant_orange_button"
+            android:textColor="#fff"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:text="Add Holidays"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:id="@+id/button_addevents"
+            android:background="@drawable/gradiant_button"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:text="Add Events"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+
+
+
+
+
+    </LinearLayout>-->
+
+</RelativeLayout>

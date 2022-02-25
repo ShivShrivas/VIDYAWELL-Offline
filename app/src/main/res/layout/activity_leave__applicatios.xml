@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_leaveapplication"
+    tools:context=".Leave_Applicatios">
+
+   <!-- <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/layout_notauthrisation_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:src="@drawable/ic_authentication"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User not authorised for leave applications"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/layout_authrisation_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edittext_searchleave"
+                    android:paddingLeft="5dp"
+                    android:hint="Search"
+                    android:paddingRight="8dp"
+                    android:drawableRight="@drawable/ic_search"
+                    android:background="@drawable/bg_outline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_dateselect_new"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="25dp"
+                        android:background="@drawable/ic_calendar_leave"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/set_fromdate_new"
+                        android:layout_centerVertical="true"
+                        android:text="09/10/2019"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:divider="@null"
+                android:scrollbars="none"
+                android:id="@+id/list_leaveapplication"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:divider="@null"
+            android:scrollbars="none"
+            android:id="@+id/list_leaveapplication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

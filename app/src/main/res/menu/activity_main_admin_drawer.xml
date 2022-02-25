@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_e_book"
+            android:icon="@drawable/ic_leave"
+            android:title="e_Book" />
+
+
+        <item
+            android:id="@+id/nav_leave_status"
+            android:icon="@drawable/ic_leave"
+            android:title="Leave Application" />
+
+
+        <item
+            android:id="@+id/nav_Student_leave_status"
+            android:icon="@drawable/ic_leave"
+            android:title="Student Leave Application" />
+
+
+        <item
+            android:id="@+id/nav_visitor"
+            android:icon="@drawable/ic_newsletter"
+            android:title="Visitors" />
+    <item
+        android:id="@+id/nav_circular"
+        android:icon="@drawable/ic_circular"
+        android:title="Circular" />
+    <item
+        android:id="@+id/nav_noticeboard"
+        android:icon="@drawable/ic_notice_board"
+        android:title="Noticeboard" />
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/ic_notification_icon"
+        android:title="Notification" />
+
+
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_time_table"
+            android:title="Calendar" />
+
+        <item
+            android:id="@+id/nav_time_table"
+            android:icon="@drawable/ic_course_work"
+            android:title="Time Table" />
+
+        <item
+            android:id="@+id/nav_class_attendance"
+            android:icon="@drawable/ic_student_message"
+            android:title="Class Attendance" />
+
+       <!-- <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_newsletter"
+            android:title="Event" />-->
+
+
+
+        <item
+            android:id="@+id/nav_attendance_status"
+            android:icon="@drawable/ic_staff_message"
+            android:title="My Attendance" />
+
+        <item
+            android:id="@+id/nav_changepassword"
+            android:icon="@drawable/ic_lock_passwordmenu"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+
+
+
+    </group>
+
+<!--
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+-->
+
+
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "206224567154",
+    "firebase_url": "https://vidyawell-admin.firebaseio.com",
+    "project_id": "vidyawell-admin",
+    "storage_bucket": "vidyawell-admin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206224567154:android:667b180e6c226bf9",
+        "android_client_info": {
+          "package_name": "vidyawell.infotech.bsn.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206224567154-tmg17rtovkhhgdr311oqbe01id162e44.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vidyawell.infotech.bsn.admin",
+            "certificate_hash": "9aeb14674437bb0640304d0f1e1a12b2818f635d"
+          }
+        },
+        {
+          "client_id": "206224567154-u533q1ju6d6rdaepj4fd1e7o70ea9a1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgABc586WhGtNBhenpjg2Mo4FJ2POqumM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206224567154-u533q1ju6d6rdaepj4fd1e7o70ea9a1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
