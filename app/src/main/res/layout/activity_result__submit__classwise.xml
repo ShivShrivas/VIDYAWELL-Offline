@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 app:cardElevation="5dp"
@@ -89,7 +89,7 @@
 
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 
@@ -101,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 app:cardElevation="5dp"
@@ -113,7 +113,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                 </Spinner>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
@@ -122,7 +122,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 app:cardElevation="5dp"
@@ -134,7 +134,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                 </Spinner>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
     </LinearLayout>
          <LinearLayout
@@ -171,7 +171,7 @@
                  android:layout_width="match_parent"
                  android:layout_height="match_parent">
 
-                 <android.support.v7.widget.CardView
+                 <androidx.cardview.widget.CardView
                      android:layout_width="match_parent"
                      android:layout_height="45dp"
                      app:cardElevation="5dp"
@@ -184,7 +184,7 @@
                          android:layout_width="match_parent"
                          android:layout_height="match_parent">
                      </Spinner>
-                 </android.support.v7.widget.CardView>
+                 </androidx.cardview.widget.CardView>
              </LinearLayout>
              <LinearLayout
                  android:layout_weight="1"
@@ -192,7 +192,7 @@
                  android:layout_width="match_parent"
                  android:layout_height="match_parent">
 
-                 <android.support.v7.widget.CardView
+                 <androidx.cardview.widget.CardView
                      android:layout_width="match_parent"
                      android:layout_height="45dp"
                      app:cardElevation="5dp"
@@ -204,7 +204,7 @@
                          android:layout_width="match_parent"
                          android:layout_height="match_parent">
                      </Spinner>
-                 </android.support.v7.widget.CardView>
+                 </androidx.cardview.widget.CardView>
 
 
              </LinearLayout>
@@ -216,7 +216,7 @@
                  android:layout_width="match_parent"
                  android:layout_height="match_parent">
 
-                 <android.support.v7.widget.CardView
+                 <androidx.cardview.widget.CardView
                      android:layout_width="match_parent"
                      android:layout_height="45dp"
                      app:cardElevation="5dp"
@@ -231,7 +231,7 @@
 
 
 
-                 </android.support.v7.widget.CardView>
+                 </androidx.cardview.widget.CardView>
 
 
 
@@ -290,7 +290,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             </TextView>
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 app:cardElevation="5dp"
@@ -302,7 +302,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                 </Spinner>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
         <LinearLayout
             android:visibility="visible"
@@ -318,7 +318,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             </TextView>
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 app:cardElevation="5dp"
@@ -334,7 +334,7 @@
 
 
 
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 

@@ -294,7 +294,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:orientation="horizontal">
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:cardElevation="3dp"
@@ -307,11 +307,11 @@
                 android:focusable="true"
                 android:id="@+id/select_classd">
             </Spinner>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:cardElevation="3dp"
@@ -326,9 +326,9 @@
 
 
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -342,7 +342,7 @@
                 android:focusable="true"
                 android:id="@+id/select_branch">
             </Spinner>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -367,7 +367,7 @@
                     android:layout_height="45dp"
                     android:orientation="horizontal">
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:cardElevation="3dp"
@@ -379,7 +379,7 @@
                             android:layout_height="match_parent"
                             android:id="@+id/select_homework_topic">
                         </Spinner>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </LinearLayout>
 
@@ -400,7 +400,7 @@
                     android:layout_marginLeft="3dp"
                     android:text="Upload Video"/>
 
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardElevation="3dp"
@@ -416,7 +416,7 @@
                         android:src="@drawable/ic_picture"
                         />
 
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
             </LinearLayout>
@@ -439,7 +439,7 @@
                     android:layout_marginLeft="3dp"
                     android:text="Attachment"/>
 
-                <android.support.v7.widget.AppCompatButton
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/search_list_topic"
                     android:layout_width="match_parent"
                     android:layout_height="42dp"

@@ -2,7 +2,7 @@ package vidyawell.infotech.bsn.admin;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -40,7 +40,7 @@ public class Salary_Slip extends AppCompatActivity {
         setContentView(R.layout.activity_salary_slip);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
         TypefaceUtil fontChanger = new TypefaceUtil(getAssets(), "fonts/"+ ServerApiadmin.FONT_DASHBOARD);
         fontChanger.replaceFonts((LinearLayout)findViewById(R.id.layout_salaryslip));

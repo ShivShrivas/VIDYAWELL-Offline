@@ -4,8 +4,8 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -14,12 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
-
-import com.github.siyamed.shapeimageview.RoundedImageView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,10 +24,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import vidyawell.infotech.bsn.admin.Adapters.Gallery_Adapter;
 import vidyawell.infotech.bsn.admin.Adapters.Gallery_Grid_Adapter;
 import vidyawell.infotech.bsn.admin.Helpers.Gallery_Grid_Helper;
-import vidyawell.infotech.bsn.admin.Helpers.Gallery_Helper;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
 import vidyawell.infotech.bsn.admin.Services.JsonParser;
 import vidyawell.infotech.bsn.admin.Services.TypefaceUtil;
@@ -52,7 +46,7 @@ public class Zoom_Image_Gallery extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         TypefaceUtil fontChanger = new TypefaceUtil(getAssets(), "fonts/"+ ServerApiadmin.FONT);
         fontChanger.replaceFonts((RelativeLayout) findViewById(R.id.relative_galleryview));
-        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
         SpannableString str = new SpannableString("Gallery View");
         TypefaceSpan typefaceSpan = new TypefaceSpan("fonts/" + ServerApiadmin.FONT);

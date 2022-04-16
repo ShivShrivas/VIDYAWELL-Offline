@@ -8,10 +8,10 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TypefaceSpan;
@@ -22,9 +22,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -32,7 +30,6 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -46,14 +43,12 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.GsonConverterFactory;
-import retrofit.Response;
-import retrofit.Retrofit;
-import vidyawell.infotech.bsn.admin.Adapters.Bus_on_Adapter;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 import vidyawell.infotech.bsn.admin.Adapters.Route_Adapter;
-import vidyawell.infotech.bsn.admin.Helpers.Bus_on_Helper;
 import vidyawell.infotech.bsn.admin.Helpers.Route_Helper;
 import vidyawell.infotech.bsn.admin.POJO.Example;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
@@ -95,7 +90,7 @@ public class Busroute_map extends AppCompatActivity implements OnMapReadyCallbac
         route_buses=(LinearLayout)findViewById(R.id.route_buses);
         str.setSpan(typefaceSpan, 0, str.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         getSupportActionBar().setTitle(str);
-        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             checkLocationPermission();
@@ -373,7 +368,7 @@ public class Busroute_map extends AppCompatActivity implements OnMapReadyCallbac
 
         call.enqueue(new Callback<Example>() {
             @Override
-            public void onResponse(Response<Example> response, Retrofit retrofit) {
+            public void onResponse(Call<Example> call, Response<Example> response) {
 
                 try {
                     //Remove previous line from map
@@ -386,7 +381,7 @@ public class Busroute_map extends AppCompatActivity implements OnMapReadyCallbac
                     for (int i = 0; i < response.body().getRoutes().size(); i++) {
                         String distance = response.body().getRoutes().get(i).getLegs().get(i).getDistance().getText();
                         String time = response.body().getRoutes().get(i).getLegs().get(i).getDuration().getText();
-                       // ShowDistanceDuration.setText("Distance:" + distance + ", Duration:" + time);
+                        // ShowDistanceDuration.setText("Distance:" + distance + ", Duration:" + time);
                         String encodedString = response.body().getRoutes().get(0).getOverviewPolyline().getPoints();
                         List<LatLng> list = decodePoly(encodedString);
                         line = mMap.addPolyline(new PolylineOptions()
@@ -406,9 +401,11 @@ public class Busroute_map extends AppCompatActivity implements OnMapReadyCallbac
             }
 
             @Override
-            public void onFailure(Throwable t) {
+            public void onFailure(Call<Example> call, Throwable t) {
                 Log.d("onFailure", t.toString());
             }
+
+
         });
 
     }

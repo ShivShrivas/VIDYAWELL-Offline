@@ -2,11 +2,10 @@ package vidyawell.infotech.bsn.admin;
 
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
-import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.AsyncTask;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -18,7 +17,6 @@ import android.widget.DatePicker;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,9 +26,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import vidyawell.infotech.bsn.admin.Adapters.ClassList_Adapter;
 import vidyawell.infotech.bsn.admin.Adapters.Leave_History_Adapter;
-import vidyawell.infotech.bsn.admin.Helpers.ClassList_Helper;
 import vidyawell.infotech.bsn.admin.Helpers.Leave_History_Helper;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
 import vidyawell.infotech.bsn.admin.Services.JsonParser;
@@ -56,7 +52,7 @@ public class Emp_Leave_History extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
         applicationControllerAdmin=(ApplicationControllerAdmin)getApplication();
         TypefaceUtil fontChanger = new TypefaceUtil(getAssets(), "fonts/"+ ServerApiadmin.FONT);

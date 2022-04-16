@@ -80,7 +80,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:orientation="horizontal">
-                        <android.support.v7.widget.CardView
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             app:cardElevation="3dp"
@@ -93,11 +93,11 @@
                                 android:focusable="true"
                                 android:id="@+id/select_class">
                             </Spinner>
-                        </android.support.v7.widget.CardView>
+                        </androidx.cardview.widget.CardView>
 
 
 
-                        <android.support.v7.widget.CardView
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             app:cardElevation="3dp"
@@ -112,7 +112,7 @@
 
 
 
-                        </android.support.v7.widget.CardView>
+                        </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
 
@@ -141,7 +141,7 @@
                             android:layout_height="45dp"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:cardElevation="3dp"
@@ -154,7 +154,7 @@
                                     android:focusable="true"
                                     android:id="@+id/select_branch">
                                 </Spinner>
-                            </android.support.v7.widget.CardView>
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -178,7 +178,7 @@
                             android:layout_height="45dp"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:cardElevation="3dp"
@@ -190,7 +190,7 @@
                                     android:layout_height="match_parent"
                                     android:id="@+id/select_stream">
                                 </Spinner>
-                            </android.support.v7.widget.CardView>
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
 
 
@@ -213,7 +213,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:orientation="horizontal">
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:cardElevation="3dp"
@@ -239,7 +239,7 @@
                                                     android:id="@+id/select_student">
                                                 </Spinner>
                         -->
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
                     <Button
                         android:background="@color/colorfooter"
@@ -478,7 +478,7 @@
                             android:layout_height="45dp"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:cardElevation="3dp"
@@ -506,7 +506,7 @@
                                     android:background="#fff"
                                     android:padding="5dp" />
 
-                            </android.support.v7.widget.CardView>
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -529,7 +529,7 @@
                             android:layout_height="45dp"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:cardElevation="3dp"
@@ -547,7 +547,7 @@
                                     android:padding="5dp"
                                     android:id="@+id/txt_topic">
                                 </EditText>
-                            </android.support.v7.widget.CardView>
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
 
 
@@ -581,7 +581,7 @@
                             android:layout_height="45dp"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:cardElevation="3dp"
@@ -594,7 +594,7 @@
                                     android:focusable="true"
                                     android:id="@+id/select_presenter">
                                 </Spinner>
-                            </android.support.v7.widget.CardView>
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -617,7 +617,7 @@
                             android:layout_height="45dp"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:cardElevation="3dp"
@@ -642,7 +642,7 @@
                                                                     android:id="@+id/select_moderator">
                                                                 </Spinner>
                                 -->
-                            </android.support.v7.widget.CardView>
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
 
 
@@ -674,7 +674,7 @@
                             android:layout_height="45dp"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:cardElevation="3dp"
@@ -700,7 +700,7 @@
                                                                     android:id="@+id/select_default_moderator">
                                                                 </Spinner>
                                 -->
-                            </android.support.v7.widget.CardView>
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -723,7 +723,7 @@
                             android:layout_height="45dp"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <androidx.cardview.widget.CardView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:cardElevation="3dp"
@@ -736,7 +736,7 @@
                                     android:entries="@array/array_submision_requred"
                                     android:id="@+id/select_is_active">
                                 </Spinner>
-                            </android.support.v7.widget.CardView>
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
 
 
@@ -756,7 +756,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="3dp"
                     android:text="Description"/>
-                <android.support.v7.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:cardElevation="3dp"
@@ -970,7 +970,7 @@
                     </LinearLayout>
 
                 </LinearLayout>
-                </android.support.v7.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
 
 
@@ -1046,7 +1046,7 @@
 
 
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:cardElevation="3dp"
@@ -1245,7 +1245,7 @@
                             </LinearLayout>
 
                         </LinearLayout>
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 

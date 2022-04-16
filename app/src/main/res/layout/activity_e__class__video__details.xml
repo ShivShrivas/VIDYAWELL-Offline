@@ -105,7 +105,7 @@
         android:gravity="bottom|end"
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content">
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
             android:layout_margin="16dp"
             app:srcCompat="@drawable/ic_plus" >
 
-        </android.support.design.widget.FloatingActionButton>>
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>>
     </RelativeLayout>
 
     <RelativeLayout

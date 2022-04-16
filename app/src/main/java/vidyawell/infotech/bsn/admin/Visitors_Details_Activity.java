@@ -8,8 +8,8 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TypefaceSpan;
@@ -24,15 +24,10 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-
 import de.hdodenhof.circleimageview.CircleImageView;
-import vidyawell.infotech.bsn.admin.Adapters.Visitor_Adapter;
-import vidyawell.infotech.bsn.admin.Helpers.Visitor_Helper;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
 import vidyawell.infotech.bsn.admin.Services.JsonParser;
 import vidyawell.infotech.bsn.admin.Services.TypefaceUtil;
@@ -55,7 +50,7 @@ public class Visitors_Details_Activity  extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         TypefaceUtil fontChanger = new TypefaceUtil(getAssets(), "fonts/" + ServerApiadmin.FONT_DASHBOARD);
         fontChanger.replaceFonts((LinearLayout) findViewById(R.id.layout_visitdetails));
-        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
         TypefaceSpan typefaceSpan = new TypefaceSpan("fonts/"+ServerApiadmin.FONT_DASHBOARD);
         SpannableString str = new SpannableString("Visitor Details");

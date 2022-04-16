@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="vidyawell.infotech.bsn.admin">
     <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,14 +13,9 @@
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
     <uses-permission android:name="android.permission.STORAGE" />
     <uses-permission android:name="android.webkit.PermissionRequest" />
-    <uses-permission android:name="android.webkit.PermissionRequest" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
@@ -33,10 +29,19 @@
         android:supportsRtl="true"
         android:theme="@style/CustomActionBarTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Student_List"></activity>
+        <activity
+            android:name=".Event_History_Item"
+            android:exported="false" />
+        <activity
+            android:name=".Event_History_List"
+            android:exported="false" />
+        <activity
+            android:name=".Submit_Event_Details"
+            android:exported="false" />
+        <activity android:name=".Student_List" />
         <activity
             android:name=".Virtual_Class"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity android:name=".LiveClass" />
         <activity
             android:name=".LiveClass_Video"
@@ -147,7 +152,6 @@
             android:name=".Emp_Attendance"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
-
         <activity
             android:name=".Student_Attendance"
             android:screenOrientation="portrait" />
@@ -242,10 +246,15 @@
         <activity
             android:name=".Change_Password"
             android:screenOrientation="portrait" />
-        <receiver android:name = "MyReceiver">
+
+        <receiver
+            android:name=".MyReceiver"
+            android:exported="true">
             <intent-filter>
-                <action android:name = "android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name = "android.net.wifi.WIFI_STATE_CHANGED" />
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
             </intent-filter>
         </receiver>
 
@@ -253,12 +262,16 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <service android:name=".MyFirebaseMessagingService">
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".MyFirebaseInstanceIDService">
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
@@ -268,17 +281,16 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
-
+                android:resource="@xml/provider_paths" />
         </provider>
-
     </application>
 
 </manifest>

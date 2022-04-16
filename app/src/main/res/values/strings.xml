@@ -54,6 +54,7 @@
     <string name="unknown_geofence_transition">Unknown Transition</string>
 
     <string name="geofence_transition_notification_text">Click notification to return to app</string>
+    <string name="view_more"><u>View more...</u></string>
 
 
     <string-array name="array_months">

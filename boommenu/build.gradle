@@ -25,12 +25,12 @@ ext {
 }
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 30
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 26
+        minSdkVersion 21
+        targetSdkVersion 30
         versionCode 2110
         versionName "2.1.1"
     }
@@ -43,8 +43,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'junit:junit:4.12'
 }
 
 /*apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'*//*

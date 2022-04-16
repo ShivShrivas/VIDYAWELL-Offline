@@ -1,7 +1,7 @@
 package vidyawell.infotech.bsn.admin;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -9,7 +9,6 @@ import android.text.style.TypefaceSpan;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
 import vidyawell.infotech.bsn.admin.Services.TypefaceUtil;
@@ -25,7 +24,7 @@ public class Homwork_Checked_Status_Button extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
         applicationControllerAdmin = (ApplicationControllerAdmin) getApplication();
         TypefaceUtil fontChanger = new TypefaceUtil(getAssets(), "fonts/" + ServerApiadmin.FONT_DASHBOARD);

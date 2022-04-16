@@ -1,17 +1,14 @@
 package vidyawell.infotech.bsn.admin;
 
-import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.SpannableString;
@@ -38,7 +35,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import vidyawell.infotech.bsn.admin.Adapters.Circular_Adapter;
 import vidyawell.infotech.bsn.admin.Adapters.Student_Query_Adapter;
 import vidyawell.infotech.bsn.admin.Helpers.Student_Query_Helper;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
@@ -66,7 +62,7 @@ public class Student_Query extends AppCompatActivity{
         setContentView(R.layout.activity_student__query);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
         applicationControllerAdmin = (ApplicationControllerAdmin) getApplication();
         TypefaceUtil fontChanger = new TypefaceUtil(getAssets(), "fonts/" + ServerApiadmin.FONT_DASHBOARD);

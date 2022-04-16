@@ -3,7 +3,7 @@ package vidyawell.infotech.bsn.admin.Adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Typeface;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import vidyawell.infotech.bsn.admin.Helpers.Default_Moderator_List_Helper;
 import vidyawell.infotech.bsn.admin.Helpers.Moderator_List_Helper;
 import vidyawell.infotech.bsn.admin.R;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;

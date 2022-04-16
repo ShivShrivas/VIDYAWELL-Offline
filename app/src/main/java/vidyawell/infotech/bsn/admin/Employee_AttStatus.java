@@ -6,22 +6,16 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TypefaceSpan;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.data.BarData;
@@ -40,12 +34,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
 
-import vidyawell.infotech.bsn.admin.Adapters.Staff_Adapter;
 import vidyawell.infotech.bsn.admin.Calendar.CaldroidFragment;
-import vidyawell.infotech.bsn.admin.Calendar.CaldroidListener;
-import vidyawell.infotech.bsn.admin.Helpers.Staff_Helper;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
 import vidyawell.infotech.bsn.admin.Services.JsonParser;
 import vidyawell.infotech.bsn.admin.Services.TypefaceUtil;
@@ -72,7 +62,7 @@ public class Employee_AttStatus extends AppCompatActivity {
         setContentView(R.layout.activity_employee__att_status);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
         applicationController=(ApplicationControllerAdmin) getApplicationContext();
         TypefaceUtil fontChanger = new TypefaceUtil(getAssets(), "fonts/"+ ServerApiadmin.FONT_DASHBOARD);

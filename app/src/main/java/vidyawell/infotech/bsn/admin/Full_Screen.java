@@ -1,18 +1,10 @@
 package vidyawell.infotech.bsn.admin;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.TypefaceSpan;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-
-import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
-import vidyawell.infotech.bsn.admin.Services.TypefaceUtil;
 
 public class Full_Screen extends AppCompatActivity {
 

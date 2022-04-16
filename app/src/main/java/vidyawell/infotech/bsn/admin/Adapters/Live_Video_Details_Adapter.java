@@ -4,9 +4,8 @@ package vidyawell.infotech.bsn.admin.Adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.Typeface;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,15 +22,10 @@ import com.github.siyamed.shapeimageview.RoundedImageView;
 import java.util.List;
 
 import vidyawell.infotech.bsn.admin.ApplicationControllerAdmin;
-import vidyawell.infotech.bsn.admin.Full_Screen;
 import vidyawell.infotech.bsn.admin.Full_Screen_Live;
-import vidyawell.infotech.bsn.admin.Helpers.Approved_Vedio_Helper;
-import vidyawell.infotech.bsn.admin.Helpers.Class_Attendance_Helper;
-import vidyawell.infotech.bsn.admin.Helpers.Gallery_Grid_Vedio_Helper;
 import vidyawell.infotech.bsn.admin.Helpers.Live_Video_Details_Helper;
 import vidyawell.infotech.bsn.admin.R;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
-import vidyawell.infotech.bsn.admin.Video_Web;
 
 public class Live_Video_Details_Adapter extends ArrayAdapter<Live_Video_Details_Helper> {
 

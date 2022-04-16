@@ -3,25 +3,19 @@ package vidyawell.infotech.bsn.admin.Adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Typeface;
-import android.net.Uri;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
-import com.github.siyamed.shapeimageview.RoundedImageView;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import vidyawell.infotech.bsn.admin.Helpers.Class_Attendance_Helper;
 import vidyawell.infotech.bsn.admin.Helpers.Homework_Topic_Helper;
-import vidyawell.infotech.bsn.admin.Helpers.Student_Query_Helper;
 import vidyawell.infotech.bsn.admin.R;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
 

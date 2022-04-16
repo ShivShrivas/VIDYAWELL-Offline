@@ -25,6 +25,7 @@
         <item name="colorAccent">@color/colorAccent</item>
 
 
+
         <item name="android:actionBarStyle">@style/MyActionBar</item>
                 <!-- Support library compatibility -->
                 <item name="actionBarStyle">@style/MyActionBar</item>

@@ -7,7 +7,7 @@
     android:id="@+id/homework_topic_notification_submit_layout"
     android:background="#fff"
     android:orientation="vertical">
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -218,6 +218,6 @@
                 </LinearLayout>
             </LinearLayout>-->
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
 

@@ -16,7 +16,7 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
@@ -32,7 +32,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import vidyawell.infotech.bsn.admin.Notification;
 import vidyawell.infotech.bsn.admin.R;
 import vidyawell.infotech.bsn.admin.SplashTwo_Activity;
 

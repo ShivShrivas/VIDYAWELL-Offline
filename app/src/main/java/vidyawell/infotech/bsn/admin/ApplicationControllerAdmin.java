@@ -2,7 +2,7 @@ package vidyawell.infotech.bsn.admin;
 
 import android.app.Application;
 import android.content.Context;
-import android.support.multidex.MultiDex;
+import androidx.multidex.MultiDex;
 
 /**
  * Created by AmitAIT on 15-09-2018.

@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,9 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import vidyawell.infotech.bsn.admin.Helpers.Circular_Helper;
 import vidyawell.infotech.bsn.admin.Helpers.Noticeboard_Helper;
-import vidyawell.infotech.bsn.admin.Helpers.Staff_Helper;
 import vidyawell.infotech.bsn.admin.R;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
 

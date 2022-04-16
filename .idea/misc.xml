@@ -3,7 +3,50 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/drawable-hdpi/location.xml" value="0.156" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/drawable-v21/border_bg.xml" value="0.1345" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/drawable-v21/camera_bg.xml" value="0.1345" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/drawable-v21/cross_buton.xml" value="0.1345" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/drawable-v21/ic_baseline_arrow_drop_down_24.xml" value="0.1345" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/drawable-v21/ic_baseline_camera_alt_24.xml" value="0.1345" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/drawable-v21/ic_baseline_highlight_off_24.xml" value="0.1345" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/drawable-v21/image_border.xml" value="0.205" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/font/m.xml" value="0.21296296296296297" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_admin_school_calendar.xml" value="0.1" />
         <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_class__attendance.xml" value="0.33" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_download_image_homework.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_e__book.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_emp_leave_apply.xml" value="0.1" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_event_history_item.xml" value="0.3047752808988764" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_event_history_list.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_login.xml" value="0.4852941176470588" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_main_admin.xml" value="0.14063926940639268" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_student__attendance.xml" value="0.13287037037037036" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_submit_event_details.xml" value="0.22" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/app_bar_main_activity__admin.xml" value="0.1425925925925926" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/class_attendance_item_list.xml" value="0.14166666666666666" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/classatt_listview_footer.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/content_main_activity__admin.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/custom_text_spiner.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/event_history_itemcard.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/event_histroy_nested_itemcard.xml" value="0.33" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/history_image_card.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/homework_item_topic.xml" value="0.5" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/image_card_layout.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/popup_layout.xml" value="0.18611111111111112" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/spinner_branch_item.xml" value="0.13287037037037036" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/spinner_class_item.xml" value="0.13287037037037036" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/spinner_section_item.xml" value="0.14166666666666666" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/menu/activity_main_admin_drawer.xml" value="0.1425925925925926" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/menu/change_password.xml" value="0.1425925925925926" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/menu/event_images_upload_menu.xml" value="0.3681640625" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/menu/main_activity__admin.xml" value="0.1425925925925926" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/menu/menu_complaint.xml" value="0.1425925925925926" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/menu/menu_main.xml" value="0.1425925925925926" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/boommenu/src/main/res/drawable/history_card_background.xml" value="0.156" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/boommenu/src/main/res/drawable/piece_dot.xml" value="0.156" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/boommenu/src/main/res/drawable/shape_oval_normal.xml" value="0.156" />
+        <entry key="..\:/Adroid Studio Projects/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/boommenu/src/main/res/drawable/shape_rectangle_normal.xml" value="0.156" />
         <entry key="..\:/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_emp_leave_status.xml" value="0.1675925925925926" />
         <entry key="..\:/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/VidyawellAndroidAdminnew/VidyawellAndroidAdmin/VidyawellAdmin/app/src/main/res/layout/activity_main_admin.xml" value="0.17222222222222222" />
@@ -15,7 +58,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

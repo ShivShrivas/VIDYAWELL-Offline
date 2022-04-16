@@ -41,7 +41,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:layout_margin="10dp"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp"
@@ -108,7 +108,7 @@
                                 android:text="Month"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"/>
-                            <android.support.v7.widget.CardView
+                            <androidx.cardview.widget.CardView
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -127,7 +127,7 @@
                                         android:entries="@array/array_month">
                                     </Spinner>
                                 </LinearLayout>
-                            </android.support.v7.widget.CardView>
+                            </androidx.cardview.widget.CardView>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -273,7 +273,7 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"

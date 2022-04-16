@@ -2,35 +2,20 @@ package vidyawell.infotech.bsn.admin;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TypefaceSpan;
-import android.util.Log;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.ScaleGestureDetector;
 import android.view.View;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.AdapterView;
-import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.MediaController;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.VideoView;
-
-import com.bumptech.glide.Glide;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -39,10 +24,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import vidyawell.infotech.bsn.admin.Adapters.Gallery_Grid_Adapter;
 import vidyawell.infotech.bsn.admin.Adapters.Gallery_Grid_Vedio_Adapter;
-import vidyawell.infotech.bsn.admin.Adapters.Gallery_Vedios_Adapter;
-import vidyawell.infotech.bsn.admin.Helpers.Gallery_Grid_Helper;
 import vidyawell.infotech.bsn.admin.Helpers.Gallery_Grid_Vedio_Helper;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
 import vidyawell.infotech.bsn.admin.Services.JsonParser;
@@ -68,7 +50,7 @@ public class Vedios_gallery_Activity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         TypefaceUtil fontChanger = new TypefaceUtil(getAssets(), "fonts/" + ServerApiadmin.FONT);
         fontChanger.replaceFonts((RelativeLayout) findViewById(R.id.relative_gallery));
-        android.support.v7.app.ActionBar bar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
         SpannableString str = new SpannableString("Video Gallery");
         TypefaceSpan typefaceSpan = new TypefaceSpan("fonts/" + ServerApiadmin.FONT);

@@ -30,7 +30,7 @@
 
 
         </LinearLayout>
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:cardCornerRadius="5dp"
@@ -46,10 +46,10 @@
                     android:layout_height="match_parent" />
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="390dp"
             app:cardCornerRadius="5dp"
@@ -61,7 +61,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
         </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
         <LinearLayout

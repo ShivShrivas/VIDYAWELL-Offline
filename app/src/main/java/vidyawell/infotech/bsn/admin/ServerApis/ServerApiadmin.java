@@ -1,10 +1,5 @@
 package vidyawell.infotech.bsn.admin.ServerApis;
 
-import android.app.Application;
-import android.support.v7.app.AppCompatActivity;
-
-import vidyawell.infotech.bsn.admin.ApplicationControllerAdmin;
-
 /**
  * Created by AmitAIT on 15-09-2018.
  */

@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.net.Uri;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +18,6 @@ import java.util.List;
 
 import vidyawell.infotech.bsn.admin.ApplicationControllerAdmin;
 import vidyawell.infotech.bsn.admin.Helpers.Gallery_Grid_Helper;
-import vidyawell.infotech.bsn.admin.Helpers.Gallery_Helper;
 import vidyawell.infotech.bsn.admin.R;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
 

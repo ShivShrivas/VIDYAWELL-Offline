@@ -6,7 +6,7 @@ import android.content.Context;
 
 import android.graphics.Typeface;
 import android.net.Uri;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +25,6 @@ import java.util.List;
 import vidyawell.infotech.bsn.admin.Helpers.Upload_Document_Helper;
 import vidyawell.infotech.bsn.admin.R;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
-import vidyawell.infotech.bsn.admin.Upload_Document;
 
 
 public  class Upload_Document_Adapter extends RecyclerView.Adapter<Upload_Document_Adapter.MyViewHolder> {

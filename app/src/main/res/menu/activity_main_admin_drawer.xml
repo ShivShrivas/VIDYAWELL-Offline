@@ -18,6 +18,11 @@
             android:icon="@drawable/ic_leave"
             android:title="Leave Application" />
 
+ <item
+            android:id="@+id/event_info_upload"
+            android:icon="@drawable/ic_leave"
+            android:title="Submit Event Details" />
+
 
         <item
             android:id="@+id/nav_Student_leave_status"

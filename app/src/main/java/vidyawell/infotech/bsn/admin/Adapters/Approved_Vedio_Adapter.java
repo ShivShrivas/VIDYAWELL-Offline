@@ -7,7 +7,6 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +41,7 @@ public class Approved_Vedio_Adapter extends ArrayAdapter<Approved_Vedio_Helper> 
         this.customListner = listener;
     }
 
-    public Approved_Vedio_Adapter(@NonNull Context context, int resource, List<Approved_Vedio_Helper> approved_vedio_helpers) {
+    public Approved_Vedio_Adapter( Context context, int resource, List<Approved_Vedio_Helper> approved_vedio_helpers) {
         super(context, resource,approved_vedio_helpers);
         this.context = context;
         this.approved_vedio_helpers = approved_vedio_helpers;

@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:text="ERROR!"/>
 
-        <android.support.v7.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_closed"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"

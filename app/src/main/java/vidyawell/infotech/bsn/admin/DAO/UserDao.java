@@ -8,6 +8,8 @@ import androidx.room.Query;
 
 import java.util.List;
 
+import vidyawell.infotech.bsn.admin.Entities.EventIdRelatedPics;
+import vidyawell.infotech.bsn.admin.Entities.EventPicture;
 import vidyawell.infotech.bsn.admin.Entities.MainUrlData;
 import vidyawell.infotech.bsn.admin.Entities.UserCred;
 import vidyawell.infotech.bsn.admin.Entities.UserData;
@@ -28,13 +30,17 @@ public interface  UserDao {
     @Insert
     void insertUrlData(MainUrlData mainUrlData);
 
+    @Insert
+    abstract void insertAll(EventPicture eventPictures);
+
     @Query("DELETE FROM UserCred WHERE UserId= :userid")
     void deleteRowInUserCred(String userid);
 
     @Query("SELECT * FROM UserCred")
     List<UserCred> getUserCredFromDatabase();
 
-
+    @Insert
+    abstract void insertAllEventImages(EventIdRelatedPics eventPicturesList);
 
     @Query("SELECT * FROM UserData")
     List<UserData> getUserDataFromDatabase();

@@ -8,7 +8,7 @@
 
     android:id="@+id/layout_staff">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:layout_width="match_parent"
@@ -236,7 +236,7 @@
 
 
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

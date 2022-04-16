@@ -7,7 +7,7 @@
     android:id="@+id/class_attendance_layout"
     android:background="#fff"
     android:orientation="vertical">
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="3dp"
@@ -175,6 +175,6 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
     </LinearLayout>
 

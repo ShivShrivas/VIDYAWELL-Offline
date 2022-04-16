@@ -1,7 +1,7 @@
 package vidyawell.infotech.bsn.admin.Helpers;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.ViewGroup;
 
 public class Upload_Document_Helper extends RecyclerView.Adapter {

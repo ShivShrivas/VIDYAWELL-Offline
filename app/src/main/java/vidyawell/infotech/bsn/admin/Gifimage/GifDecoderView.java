@@ -3,13 +3,12 @@ package vidyawell.infotech.bsn.admin.Gifimage;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Handler;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
 import java.io.InputStream;
 
-public class GifDecoderView extends android.support.v7.widget.AppCompatImageView {
+public class GifDecoderView extends androidx.appcompat.widget.AppCompatImageView {
     private boolean mIsPlayingGif = false;
 
     private GifDecoder mGifDecoder;

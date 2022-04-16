@@ -7,13 +7,11 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.text.SpannableString;
 import android.text.Spanned;
-import android.text.TextWatcher;
-import android.text.style.TextAppearanceSpan;
 import android.text.style.TypefaceSpan;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,14 +24,10 @@ import android.widget.Toast;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
-import vidyawell.infotech.bsn.admin.Adapters.Circular_Adapter;
-import vidyawell.infotech.bsn.admin.Adapters.Noticeboard_Adapter;
 import vidyawell.infotech.bsn.admin.Adapters.Notification_Adapter;
 import vidyawell.infotech.bsn.admin.Helpers.Notification_Helper;
 import vidyawell.infotech.bsn.admin.ServerApis.ServerApiadmin;
@@ -62,7 +56,7 @@ public class Notification extends AppCompatActivity {
             fontChanger.replaceFonts((RelativeLayout) findViewById(R.id.layout_notification));
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-            android.support.v7.app.ActionBar bar = getSupportActionBar();
+            androidx.appcompat.app.ActionBar bar = getSupportActionBar();
             bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_maintop));
             TypefaceSpan typefaceSpan = new TypefaceSpan("fonts/" + ServerApiadmin.FONT);
             SpannableString str = new SpannableString("Notification");
