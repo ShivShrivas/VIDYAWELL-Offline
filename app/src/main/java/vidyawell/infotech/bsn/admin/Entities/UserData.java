@@ -51,8 +51,18 @@ public class UserData {
     @ColumnInfo(name = "InstitutionType")
     public String InstitutionType;
 
+    @ColumnInfo(name = "ProductTypeId")
+    public String ProductTypeId;
 
-    public UserData(String userId, String loginTypeId, String sessionId, String fyId, String gSMID, String lastLogin, String currentLogin, String active, String branchName, String branchLogo, String academicSession, String financialYear, String institutionType) {
+    public String getProductTypeId() {
+        return ProductTypeId;
+    }
+
+    public void setProductTypeId(String productTypeId) {
+        ProductTypeId = productTypeId;
+    }
+
+    public UserData(String userId, String loginTypeId, String sessionId, String fyId, String gSMID, String lastLogin, String currentLogin, String active, String branchName, String branchLogo, String academicSession, String financialYear, String institutionType,String productTypeId) {
         this.userId = userId;
         this.loginTypeId = loginTypeId;
         this.sessionId = sessionId;
@@ -66,6 +76,7 @@ public class UserData {
         this.academicSession = academicSession;
         this.financialYear = financialYear;
         InstitutionType = institutionType;
+        this.ProductTypeId =productTypeId;
     }
 
     public String getUserId() {

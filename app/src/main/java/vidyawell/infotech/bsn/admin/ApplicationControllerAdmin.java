@@ -54,8 +54,15 @@ public class ApplicationControllerAdmin extends Application {
     private String Leaveapplication;
     private String LiveClass;
     private String Servicesapplication;
+    private String ProductTypeId;
 
+    public String getProductTypeId() {
+        return ProductTypeId;
+    }
 
+    public void setProductTypeId(String productTypeId) {
+        ProductTypeId = productTypeId;
+    }
 
     @Override
     protected void attachBaseContext(Context base) {

@@ -220,8 +220,8 @@ public class Submit_Event_Details extends AppCompatActivity {
 
                                 RestClient restClient = new RestClient();
                                 ApiService apiService = restClient.getApiService();
-                                Log.e("TAG", "onClick: " + paraUploadEventdata("1", "1", "UE" + id, eventname, evenetDesc.getText().toString().trim(), currentDateTime, "eventPhoto", latitude, longitude, applicationControllerAdmin.getschoolCode(), applicationControllerAdmin.getBranchcode(), "1", "1", "createdOn", "createdby",applicationControllerAdmin.getActiveempcode(), "updatedOn", "updatedby", "isActive", "isDeleted", "isDeleted", arrayList));
-                                Call<List<JsonObject>> call = apiService.uploadEventDetails( paraUploadEventdata("1", "1", "UE" + id, eventname, evenetDesc.getText().toString().trim(), currentDateTime, "eventPhoto", latitude, longitude, applicationControllerAdmin.getschoolCode(), applicationControllerAdmin.getBranchcode(), "1", "1", "createdOn", "createdby", applicationControllerAdmin.getActiveempcode(),"UserCode","updatedOn", "updatedby", "isActive", "isDeleted", arrayList));
+                                Log.e("TAG", "onClick: " + paraUploadEventdata("1", applicationControllerAdmin.getProductTypeId(), "UE" + id, eventname, evenetDesc.getText().toString().trim(), currentDateTime, "eventPhoto", latitude, longitude, applicationControllerAdmin.getschoolCode(), applicationControllerAdmin.getBranchcode(), applicationControllerAdmin.getFyID(), applicationControllerAdmin.getSeesionID(), "createdOn", "createdby",applicationControllerAdmin.getActiveempcode(), "updatedOn", "updatedby", "isActive", "isDeleted", "isDeleted", arrayList));
+                                Call<List<JsonObject>> call = apiService.uploadEventDetails( paraUploadEventdata("1", applicationControllerAdmin.getProductTypeId(), "UE" + id, eventname, evenetDesc.getText().toString().trim(), currentDateTime, "eventPhoto", latitude, longitude, applicationControllerAdmin.getschoolCode(), applicationControllerAdmin.getBranchcode(),  applicationControllerAdmin.getFyID(), applicationControllerAdmin.getSeesionID(), "createdOn", "createdby", applicationControllerAdmin.getActiveempcode(),"UserCode","updatedOn", "updatedby", "isActive", "isDeleted", arrayList));
                                 call.enqueue(new Callback<List<JsonObject>>() {
                                     @Override
                                     public void onResponse(Call<List<JsonObject>> call, Response<List<JsonObject>> response) {
@@ -355,7 +355,7 @@ public class Submit_Event_Details extends AppCompatActivity {
 
     }
 
-    private JsonObject paraUploadEventdata(String s, String s1, String eventId, String eventname, String evenetDesc, String currentDateTime, String eventPhoto, String lat, String longt, String sch_code, String branch_code, String s3, String s4, String createdOn, String createdby,String userCode, String updatedOn, String updatedby, String isActive, String isDeleted, String deleted, ArrayList<Bitmap> arrayListImages) {
+    private JsonObject paraUploadEventdata(String s, String s1, String eventId, String eventname, String evenetDesc, String currentDateTime, String eventPhoto, String lat, String longt, String sch_code, String branch_code, String fyId, String sessionId, String createdOn, String createdby,String userCode, String updatedOn, String updatedby, String isActive, String isDeleted, String deleted, ArrayList<Bitmap> arrayListImages) {
         JsonObject jsonObject = new JsonObject();
         try {
             jsonObject.addProperty("Action", s);
@@ -369,8 +369,8 @@ public class Submit_Event_Details extends AppCompatActivity {
             jsonObject.addProperty("long",longt);
             jsonObject.addProperty("schoolCode", sch_code);
             jsonObject.addProperty("branchCode", branch_code);
-            jsonObject.addProperty("fyId", "1");
-            jsonObject.addProperty("sessionId", "1");
+            jsonObject.addProperty("fyId", fyId);
+            jsonObject.addProperty("sessionId", sessionId);
             jsonObject.addProperty("createdOn", "1");
             jsonObject.addProperty("createdBy", "1");
             jsonObject.addProperty("UserCode", userCode);

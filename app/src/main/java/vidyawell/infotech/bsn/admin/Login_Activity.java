@@ -85,7 +85,7 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
     Context context;
     RoomDatabaseClass databaseClass;
     UserDao userDao;
-    String regId,InstitutionType,BranchWebsite,AVer;
+    String regId,InstitutionType,BranchWebsite,AVer,ProductTypeId;
     CheckBox check_remember;
     String user_status,school_logo,school_name;
     ImageView imageView_logologin;
@@ -222,7 +222,7 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
                             .setAction("RETRY", new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
-                                    Toast.makeText(getApplicationContext(), "disconnected!!", Toast.LENGTH_SHORT).show();
+                                   // Toast.makeText(getApplicationContext(), "disconnected!!", Toast.LENGTH_SHORT).show();
                                     userDao=databaseClass.userDao();
                                     List<UserCred> userCreds= userDao.getUserCredFromDatabase();
                                     if (userid.trim().equals(userCreds.get(0).userId.trim()) && pasword.trim().equals(userCreds.get(0).password) && userCreds.get(0).authorized.equals("authorized")){
@@ -237,7 +237,7 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
                 }else{
 
                         new LoginProcess().execute();
-                        Toast.makeText(getApplicationContext(), "connected!!", Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(getApplicationContext(), "connected!!", Toast.LENGTH_SHORT).show();
 
 
 
@@ -462,9 +462,9 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
         protected Integer doInBackground(String... strings) {
             int status=0;
             JsonParser josnparser=new JsonParser(getApplicationContext());
-            Log.d("TAG", "doInBackground:login process 363 "+applicationController.getServicesapplication()+ServerApiadmin.LOGIN_API+"//////"+Para(userid,pasword,applicationController.getschoolCode()+applicationController.getBranchcode()));
+           // Log.d("TAG", "doInBackground:login process 363 "+applicationController.getServicesapplication()+ServerApiadmin.LOGIN_API+"//////"+Para(userid,pasword,applicationController.getschoolCode()+applicationController.getBranchcode()));
             String response=josnparser.executePost(applicationController.getServicesapplication()+ServerApiadmin.LOGIN_API,Para(userid,pasword,applicationController.getschoolCode()+applicationController.getBranchcode()),"1");
-            Log.d("TAG", "doInBackground:user data "+response);
+        //    Log.d("TAG", "doInBackground:user data "+response);
             String api =applicationController.getServicesapplication()+ServerApiadmin.LOGIN_API;
             if(response!=null){
                 if (response.length()>5){
@@ -488,6 +488,8 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
                                     school_logo=jsonobject.getString("BranchLogo");
                                     school_name=jsonobject.getString("BranchName");
                                     InstitutionType=jsonobject.getString("InstitutionType");
+                                    ProductTypeId=jsonobject.getString("ProductTypeId");
+
                                     status=1;
                                 }else{
                                     status=-4;
@@ -513,12 +515,13 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
             switch (s){
                 case 1:
                     userDao=databaseClass.userDao();
-                    userDao.insertUserData(new UserData(userid,loginTypeId,sessionId,fyId,"nun","nun","nun","nun",school_name,school_logo,"nun","nun",InstitutionType));
+                    userDao.insertUserData(new UserData(userid,loginTypeId,sessionId,fyId,"nun","nun","nun","nun",school_name,school_logo,"nun","nun",InstitutionType,ProductTypeId));
                     SharedPreferences.Editor editor = sharedpreferences.edit();
                     editor.putString("userId", userid);
                     editor.putString("Password", pasword);
                     editor.putString("loginTypeId", loginTypeId);
                     editor.putString("sessionId", sessionId);
+                    editor.putString("ProductTypeId", ProductTypeId);
                     editor.putString("fyId", fyId);
                     editor.putString("school_logo", school_logo);
                     editor.commit();
@@ -530,6 +533,7 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
                     applicationController.setschool_name(school_name);
                     applicationController.setschool_logo(school_logo);
                     applicationController.setschooltype(InstitutionType);
+                    applicationController.setProductTypeId(ProductTypeId);
                     new PermissionAPI().execute();
                     progressDialog.dismiss();
                     break;
@@ -761,7 +765,7 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
                         applicationController.setLiveClass("0");
                         ////////////////////////////////////////////////////
                         JSONArray array= new JSONArray(response);
-                        Log.d("TAG", "doInBackground:permissions  "+response);
+                     //   Log.d("TAG", "doInBackground:permissions  "+response);
                         // student_query_helpers = new ArrayList<Student_Query_Helper>();
                         UserPermissions userPermissions=new UserPermissions();
 
@@ -900,7 +904,7 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
         protected Integer doInBackground(String... strings) {
             int status=0;
             JsonParser josnparser=new JsonParser(getApplicationContext());
-            Log.d("TAG", "doInBackground:Get Url "+applicationController.getServicesapplication()+ServerApiadmin.GETURL_API+"/////"+Paracode(school_code));
+         //   Log.d("TAG", "doInBackground:Get Url "+applicationController.getServicesapplication()+ServerApiadmin.GETURL_API+"/////"+Paracode(school_code));
             String response=josnparser.executePost(applicationController.getServicesapplication()+ServerApiadmin.GETURL_API,Paracode(school_code),"1");
             if(response!=null){
                 if (response.length()>5){
@@ -919,7 +923,7 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
                         applicationController.setBranchRedius(BranchRedius);
                         applicationController.setAppversion(AVer);
                         userDao.insertUrlData(new MainUrlData(jsonobject.getString("BranchWebsite"),jsonobject.getString("AVer"),jsonobject.getString("IVer"),jsonobject.getString("InstitutionType"),jsonobject.getString("BranchLat"),jsonobject.getString("BranchLog"),jsonobject.getString("BranchRedius"),jsonobject.getString("IsHeadOffice"),jsonobject.getString("GUrl")));
-                        Log.d("TAG", "doInBackground:Main Url data inserted ");
+                   //     Log.d("TAG", "doInBackground:Main Url data inserted ");
                         status=1;
                     } catch (JSONException e) {
                         e.printStackTrace();

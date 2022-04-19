@@ -52,7 +52,7 @@ public class E_Book extends AppCompatActivity {
             @Override
             public void onClick(View v) {
               //  Toast.makeText(getApplicationContext(),"click",Toast.LENGTH_SHORT).show();
-                String url = ("http://ncert.nic.in/textbook/textbook.htm");
+                String url = ("https://ncert.nic.in/textbook.php");
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 i.setData(Uri.parse(url));

@@ -700,7 +700,7 @@ public class MainActivity_Admin extends AppCompatActivity
 
         }
         /////////////////////////update version app servicess/////////////////
-        if(applicationControllerAdmin.getAppversion().equalsIgnoreCase("1.39")){
+        if(applicationControllerAdmin.getAppversion().equalsIgnoreCase("1.40")){
 
         }else{
             updatedialog();
